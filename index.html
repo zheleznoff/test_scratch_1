@@ -12,16 +12,28 @@
 <body>
     <main class="about_block">
             <header class="about_block_header">
-                <ul class="about_block_header_nav">
-                    <li>
-                        <a href="#">Works</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    <li>
-                        <a href="#">Contact</a></li>
-                    </li>
-                </ul>
+                <div id="hamburger-content">
+                    <nav>
+                        <ul class="about_block_header_nav">
+                            <li class="about_block_header_nav_item">
+                                <a href="#">Works</a>
+                            </li>
+                            <li class="about_block_header_nav_item">
+                                <a href="#">Blog</a>
+                            <li class="about_block_header_nav_item">
+                                <a href="#">Contact</a></li>
+                            </li class="about_block_header_nav_item">
+                        </ul>
+                    </nav>
+                </div>
+                <button class="about_block_header_nav_hamburger" id="hamburger-button">
+                    <img class="about_block_header_nav_hamburger_open" src="./assets/svgs/menu.svg" alt="hamburger">
+                </button>
+                <div id="about_block_header_nav_sidebar">
+					<div id="about_block_header_nav_sidebar_header"></div>
+					<div id="about_block_header_nav_sidebar_body"></div>
+				</div>
+				<div id="about_block_header_nav_hamburger_overlay"></div>
             </header>
             <div class="container container-center">
                 <div class="about_block_info">
@@ -191,6 +203,6 @@
             <span>Copyright ©2020 All rights reserved </span>
         </div>
     </footer>
-
+    <script src="index.js"></script>
 </body>
 </html>
